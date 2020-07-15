@@ -1,0 +1,493 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+         -o-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+header {
+  border-bottom: 1px solid #f0f0f0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #Fff;
+  top: 0; }
+  header .navbar {
+    display: none; }
+
+.nav-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat';
+  color: #1F373D; }
+  .nav-menu .logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #FFCC01;
+    padding: 25px 0;
+    font-weight: 600;
+    font-size: 27px; }
+  .nav-menu_content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .nav-menu_content li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 15px;
+      font-weight: bold; }
+      .nav-menu_content li:hover {
+        color: #FFCC01; }
+  .nav-menu_feedback {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .nav-menu__number {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .nav-menu__number a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #1F373D; }
+  .nav-menu__button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+    background-color: #FFCC01;
+    border-radius: 25px; }
+    .nav-menu__button a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #1F373D; }
+
+.about {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #F6F5F4; }
+  .about_advantages {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: 'Montserrat';
+    color: #1F373D; }
+    .about_advantages h2 {
+      font-weight: 600;
+      font-size: 43px;
+      margin-bottom: 3%; }
+    .about_advantages p {
+      font-size: 15px;
+      line-height: 30px; }
+    .about_advantages .preview {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 5%; }
+      .about_advantages .preview .forma {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+        .about_advantages .preview .forma form {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .about_advantages .preview .forma form input {
+            margin-bottom: 5%;
+            border-radius: 10px;
+            outline: none;
+            border: solid 1px #FFCC01;
+            color: #1F373D; }
+          .about_advantages .preview .forma form textarea {
+            outline: none;
+            resize: none;
+            border: solid 1px #FFCC01;
+            border-radius: 10px; }
+      .about_advantages .preview-img_number {
+        padding: 3% 10%;
+        background-color: #FFCC01;
+        text-decoration: none;
+        color: #1F373D;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-weight: bold; }
+        .about_advantages .preview-img_number i {
+          color: #fff; }
+    .about_advantages__card {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .about_advantages__card-text {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+
+.services {
+  background-color: #fff;
+  font-family: 'Montserrat';
+  color: #1F373D;
+  padding-top: 7%;
+  padding-bottom: 7%; }
+  .services h2 {
+    font-weight: 600;
+    font-size: 43px;
+    margin-bottom: 3%; }
+  .services h3 {
+    font-size: 27px; }
+  .services-content_title {
+    margin-bottom: 5%; }
+  .services-content_cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .services-content_cards__card {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      color: #1F373D; }
+      .services-content_cards__card .card_number {
+        font-size: 200px;
+        font-weight: bold;
+        position: relative;
+        top: -140px;
+        left: -70px; }
+      .services-content_cards__card .card_title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: -60% 0 3%; }
+      .services-content_cards__card .card_content {
+        font-size: 13px;
+        margin: 0 0 5% 5%; }
+    .services-content_cards__card:hover {
+      color: #fff;
+      background-color: #ffcc01; }
+
+.contacts {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #F6F5F4;
+  font-family: 'Montserrat';
+  color: #1F373D; }
+  .contacts-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .contacts-wrapper h3 {
+      font-size: 27px;
+      margin-bottom: 1%; }
+    .contacts-wrapper p {
+      font-size: 17px;
+      margin-bottom: 1%; }
+  .contacts_contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .contacts_contact__icons {
+      font-size: 40px; }
+
+footer {
+  background-color: #1F373D; }
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Montserrat';
+  padding-top: 3%;
+  padding-bottom: 3%; }
+  .footer a {
+    color: #919EB1; }
+  .footer h3 {
+    color: #fff;
+    margin-bottom: 3%;
+    font-size: 23px; }
+  .footer_cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer_cards__card {
+      color: #919EB1; }
+      .footer_cards__card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+    .footer_cards__card:first-child {
+      margin-right: 5%; }
+  .footer_contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #fff;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 15px; }
+    .footer_contacts__copywriting {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .footer_contacts__copywriting i {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: 1%; }
+    .footer_contacts__icons {
+      font-size: 30px; }
+
+@media (max-width: 576px) {
+  header .navbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  header .nav-menu {
+    display: none; }
+  .about {
+    padding-top: 20%; }
+    .about_advantages h2 {
+      font-size: 20px; }
+    .about_advantages p {
+      font-size: 15px;
+      line-height: 20px; }
+    .about_advantages .preview .forma form {
+      margin-bottom: 5%; }
+  .services h2 {
+    font-size: 30px; }
+  .services h3 {
+    font-size: 20px; }
+  .services-content_cards {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer h3 {
+    font-size: 17px; }
+  .footer_cards {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .footer_cards a {
+      font-size: 8px;
+      line-height: 20px; }
+  .footer_contacts__copywriting p {
+    margin: 0; }
+  .footer_contacts__icons {
+    font-size: 20px; } }
+
+@media (max-width: 1025px) {
+  header nav .nav-menu .logo {
+    font-size: 20px; }
+  header nav .nav-menu__button a {
+    font-size: 12px; } }
+
+@media (max-width: 992px) {
+  .services-content_cards__card .card_number {
+    font-size: 150px;
+    top: -105px;
+    left: -65px; }
+  .about {
+    padding-top: 12%; }
+  .preview-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/*# sourceMappingURL=styles.css.map */

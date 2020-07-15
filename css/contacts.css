@@ -1,0 +1,38 @@
+.contacts {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: #F6F5F4;
+  font-family: 'Montserrat';
+  color: #1F373D; }
+  .contacts-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .contacts-wrapper h3 {
+      font-size: 27px;
+      margin-bottom: 1%; }
+    .contacts-wrapper p {
+      font-size: 17px;
+      margin-bottom: 1%; }
+  .contacts_contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .contacts_contact__icons {
+      font-size: 40px; }
+
+/*# sourceMappingURL=contacts.css.map */

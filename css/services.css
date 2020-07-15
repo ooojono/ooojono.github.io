@@ -1,0 +1,56 @@
+.services {
+  background-color: #fff;
+  font-family: 'Montserrat';
+  color: #1F373D;
+  padding-top: 7%;
+  padding-bottom: 7%; }
+  .services h2 {
+    font-weight: 600;
+    font-size: 43px;
+    margin-bottom: 3%; }
+  .services h3 {
+    font-size: 27px; }
+  .services-content_title {
+    margin-bottom: 5%; }
+  .services-content_cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .services-content_cards__card {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      color: #1F373D; }
+      .services-content_cards__card .card_number {
+        font-size: 200px;
+        font-weight: bold;
+        position: relative;
+        top: -140px;
+        left: -70px; }
+      .services-content_cards__card .card_title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: -60% 0 3%; }
+      .services-content_cards__card .card_content {
+        font-size: 13px;
+        margin: 0 0 5% 5%; }
+    .services-content_cards__card:hover {
+      color: #fff;
+      background-color: #ffcc01; }
+
+/*# sourceMappingURL=services.css.map */

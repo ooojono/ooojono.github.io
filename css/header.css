@@ -1,0 +1,99 @@
+header {
+  border-bottom: 1px solid #f0f0f0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #Fff;
+  top: 0; }
+  header .navbar {
+    display: none; }
+
+.nav-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Montserrat';
+  color: #1F373D; }
+  .nav-menu .logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #FFCC01;
+    padding: 25px 0;
+    font-weight: 600;
+    font-size: 27px; }
+  .nav-menu_content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .nav-menu_content li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 15px;
+      font-weight: bold; }
+      .nav-menu_content li:hover {
+        color: #FFCC01; }
+  .nav-menu_feedback {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .nav-menu__number {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .nav-menu__number a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #1F373D; }
+  .nav-menu__button {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+    background-color: #FFCC01;
+    border-radius: 25px; }
+    .nav-menu__button a {
+      text-decoration: none;
+      font-size: 17px;
+      color: #1F373D; }
+
+/*# sourceMappingURL=header.css.map */

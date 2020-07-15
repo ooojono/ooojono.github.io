@@ -1,0 +1,69 @@
+footer {
+  background-color: #1F373D; }
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Montserrat';
+  padding-top: 3%;
+  padding-bottom: 3%; }
+  .footer a {
+    color: #919EB1; }
+  .footer h3 {
+    color: #fff;
+    margin-bottom: 3%;
+    font-size: 23px; }
+  .footer_cards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .footer_cards__card {
+      color: #919EB1; }
+      .footer_cards__card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0; }
+    .footer_cards__card:first-child {
+      margin-right: 5%; }
+  .footer_contacts {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #fff;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 15px; }
+    .footer_contacts__copywriting {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .footer_contacts__copywriting i {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: 1%; }
+    .footer_contacts__icons {
+      font-size: 30px; }
+
+/*# sourceMappingURL=footer.css.map */
